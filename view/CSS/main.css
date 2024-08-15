@@ -3,7 +3,7 @@
   --light-30: rgb(259,259, 259);
 
   --dark-10: #1a1919;
-  --orange-30: #fbc105;
+  --yellow-30: #fbc105;
 
   /* Fonts  */
   --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue",
@@ -17,93 +17,116 @@ body {
 
 .featured-container {
   display: block;
-  height: 618px;
-  width: 100%;
+  height: 600px;
 }
 
 .home-content {
-  background: rgb(18, 18, 18, 0.5);
+  background: rgb(18, 18, 18, 0.6);
   background-blend-mode: multiply;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100%;
   background-image: url(/images/AdobeStock_118416281.jpeg);
   padding: 50px 45px;
-
 }
 
 .highlighted-title-container {
   font-family: var(--font-family-title);
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
 }
 
 .title-emphasis {
   color: var(--light-30);
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
 .descript-emphasis {
   color: var(--light-30);
   font-family: var(--font-family-title);
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  line-height: 1.3em;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 30px;
   margin-bottom: 30px;
-  width: 380px;
+  text-align: justify;
 }
 
 .yellow-font {
-  color: var(--orange-30);
+  color: var(--yellow-30);
+  font-weight: 400;
 }
 
 .budgets-button {
-  background-color: var(--orange-30);
+  background-color: var(--yellow-30);
   color: var(--dark-10);
   padding: 12px 24px;
   width: max-content;
 }
 
 .budgets-button:hover {
-  color: var(--light-30);
+  background-color: var(--light-30);
+}
+
+#request-a-quote {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  color: var(--dark-10);
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .home-cards-section {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 15px;
-  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 0;
+  gap: 20px;
+  margin-top: 70px;
+  padding: 12px 36px;
 }
 
 .home-cards {
   background-color: var(--dark-10);
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
   font-family: var(--font-family-title);
-  justify-content: center;
+  justify-content: start;
   line-height: 22px;
-}
-
-.text-card-p {
-  color: var(--light-30);
-  font-family: var(--font-family-title);
-  font-weight: 300;
-  margin-top: 12px;
-  text-align: start;
-}
-
-.text-card-p:hover {
-  color: var(--orange-30);
 }
 
 .text-card {
   color: var(--light-30);
   font-family: var(--font-family-title);
-  font-weight: 500;
+  font-weight: 400;
 }
+
+.text-card-p {
+  color: var(--light-30);
+  font-family: var(--font-family-title);
+  font-weight: 100;
+  line-height: 32px;
+  margin-top: 12px;
+  text-align: start;
+  transform: weight ease-in 0.15ms;
+}
+
+.text-card-p:hover {
+  color: var(--yellow-30);
+  font-weight: 300;
+}
+
 
 @media screen and (min-width: 768px) {
   .grid-container {
