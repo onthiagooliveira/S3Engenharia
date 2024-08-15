@@ -1,0 +1,225 @@
+:root {
+  /* Colors */
+  --light-30: rgb(259,259, 259);
+
+  --dark-10: #1a1919;
+  --orange-30: #fbc105;
+
+  /* Fonts  */
+  --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.featured-container {
+  display: block;
+  height: 618px;
+  width: 100%;
+}
+
+.home-content {
+  background: rgb(18, 18, 18, 0.5);
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(/images/AdobeStock_118416281.jpeg);
+  padding: 50px 45px;
+
+}
+
+.highlighted-title-container {
+  font-family: var(--font-family-title);
+}
+
+.title-emphasis {
+  color: var(--light-30);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+.descript-emphasis {
+  color: var(--light-30);
+  font-family: var(--font-family-title);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+  width: 380px;
+}
+
+.yellow-font {
+  color: var(--orange-30);
+}
+
+.budgets-button {
+  background-color: var(--orange-30);
+  color: var(--dark-10);
+  padding: 12px 24px;
+  width: max-content;
+}
+
+.budgets-button:hover {
+  color: var(--light-30);
+}
+
+.home-cards-section {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.home-cards {
+  background-color: var(--dark-10);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-family-title);
+  justify-content: center;
+  line-height: 22px;
+}
+
+.text-card-p {
+  color: var(--light-30);
+  font-family: var(--font-family-title);
+  font-weight: 300;
+  margin-top: 12px;
+  text-align: start;
+}
+
+.text-card-p:hover {
+  color: var(--orange-30);
+}
+
+.text-card {
+  color: var(--light-30);
+  font-family: var(--font-family-title);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 132px;
+  }
+
+  .title-emphasis {
+    font-size: 60px;
+  }
+
+  .home-cards-section {
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .home-cards {
+    padding: 12px 36px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 150px 50px;
+    justify-content: space-between;
+  }
+
+  .highlighted-title-container {
+    padding: 15px 30px;
+  }
+
+  .descript-emphasis {
+    width: 380px;
+  }
+
+  .budgets-button {
+    font-size: 18px;
+
+  }
+
+  .home-cards-section {
+    margin-top: 90px;
+    gap: 16px;
+  }
+
+  .home-cards {
+    padding: 30px 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding: 112px;
+  }
+
+  .highlighted-title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-emphasis {
+    font-size: 48px;
+    margin-bottom: 34px;
+  }
+
+  .descript-emphasis,
+  .budgets-button {
+    font-size: 20px;
+  }
+
+  .descript-emphasis {
+    width: 490px;
+  }
+
+  .budgets-button {
+    text-align: center;
+    padding: 14px 163px;
+  }
+
+  .home-cards-section {
+    gap: 16px;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+    margin-top: 36px;
+    justify-content: start;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .home-cards {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-container {
+    grid-auto-flow: row;
+    place-content: center;
+  }
+
+  .home-cards-section {
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+    gap: 16px;
+  }
+
+  .home-cards {
+    padding: 12px 16px;
+    margin-top: 0px;
+  }
+}
