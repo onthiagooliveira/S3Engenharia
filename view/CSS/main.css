@@ -10,25 +10,22 @@
     sans-serif;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-}
+
 
 .featured-container {
   display: block;
-  height: 600px;
+  height: 618px;
 }
 
 .home-content {
-  background: rgb(18, 18, 18, 0.6);
-  background-blend-mode: multiply;
-  background-position: center;
+  background: rgba(251, 193, 0, 0.4);
+  background-blend-mode: multiply ;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100%;
-  background-image: url(/images/AdobeStock_118416281.jpeg);
+  background-image: url(/images/AdobeStock_265047060.jpeg);
   padding: 50px 45px;
 }
 
@@ -77,15 +74,15 @@ body {
 
 #request-a-quote {
   font-family: var(--font-family-title);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--dark-10);
 }
 
 .grid-container {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 18px;
 }
 
 .home-cards-section {

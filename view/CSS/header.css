@@ -10,11 +10,6 @@
     sans-serif;
 }
 
-body {
-  width: 100vw;
-  height: 100%;
-}
-
 header {
   background-color: var(--dark-10);
   display: grid;
