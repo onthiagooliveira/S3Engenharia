@@ -14,11 +14,11 @@
 
 .featured-container {
   display: block;
-  height: 618px;
+  height: 688px;
 }
 
 .home-content {
-  background: rgba(251, 193, 0, 0.4);
+  background: rgba(251, 193, 1, 0.3);
   background-blend-mode: multiply ;
   background-position: top;
   background-repeat: no-repeat;
@@ -26,7 +26,9 @@
   position: relative;
   height: 100%;
   background-image: url(/images/AdobeStock_265047060.jpeg);
+  margin-top: -70px;
   padding: 50px 45px;
+
 }
 
 .highlighted-title-container {

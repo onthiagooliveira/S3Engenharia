@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
 :root {
   /* Colors */
-  --light-30: #f2f2f2;
-  --light-20: #d9d9d9;
+  --light-30: #ffffff;
   --dark-10: #1a1919;
   --orange-30: #fbc105;
 
   /* Fonts  */
   --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; 
+  --font-family-voltaire: "Voltaire", sans-serif;
+
 }
 
 header {
-  background-color: var(--dark-10);
+  background-color: rgb(255, 255, 255, 0.9);
+  position: sticky;
+  z-index: 100;
+  top: 0;
   display: grid;
   grid-auto-flow: column;
   grid-auto-rows: 1fr;
@@ -27,8 +33,23 @@ header {
 }
 
 .box-logo {
-  width: 60px;
-  height: 30px;
+  width: 170px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.logo-oficial {
+  text-decoration: none;
+  color: var(--dark-10);
+  font-size: 20px;
+  font-weight: 300;
+  font-family: var(--font-family-title);
+  letter-spacing: 0.8px;
+}
+
+.logo-height {
+  font-weight: 600;
+  font-family: var(--font-family-voltaire);
 }
 
 .picture-logo {
