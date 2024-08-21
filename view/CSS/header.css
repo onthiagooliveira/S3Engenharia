@@ -1,47 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@100..900&display=swap');
 
 :root {
   /* Colors */
   --light-30: #ffffff;
-  --dark-10: #1a1919;
-  --orange-30: #fbc105;
+  --dark-10: #303030;
+
 
   /* Fonts  */
-  --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue",
-    sans-serif; 
-  --font-family-voltaire: "Voltaire", sans-serif;
+  --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue", sans-serif; 
+  --font-family-Lexend: "Lexend Deca", sans-serif;
 
 }
 
 header {
+  align-items: center;
   background-color: rgb(255, 255, 255, 0.9);
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-rows: 1fr;
-  width: 100%vw;
-  height: 70px;
+  display: flex;
+  position: relative;
 }
 
-.left-section,
 .box-logo {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.box-logo {
-  width: 170px;
-  height: 40px;
-  padding: 8px 16px;
-}
 
 .logo-oficial {
-  text-decoration: none;
-  color: var(--dark-10);
-  font-size: 20px;
+  color: #303030;
+  font-size: 24px;
   font-weight: 300;
   font-family: var(--font-family-title);
   letter-spacing: 0.8px;
@@ -49,33 +36,38 @@ header {
 
 .logo-height {
   font-weight: 600;
-  font-family: var(--font-family-voltaire);
+  font-family: var(--font-family-Lexend);
 }
 
-.picture-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 4px 14px;
-}
 
 @media screen and (max-width: 767px) {
   
   header{
-    padding: 0 120px;
+    justify-content: flex-start;
+    padding: 25px 50px;
+  }
+
+  .logo-oficial{
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 768px) {
   
   header{
-    padding: 0 180px;
+    justify-content: flex-start;
+    padding: 25px 55px;
+  }
+
+  .logo-oficial{
+    font-size: 28px;
   }
 }
 
 @media screen and (max-width: 1279px) {
   
   header{
-    padding: 0 120px;
+    justify-content: flex-start;
+    padding: 35px 70px;
   }
 }
