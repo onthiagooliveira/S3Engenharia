@@ -5,18 +5,15 @@
   --light-30: #ffffff;
   --dark-10: #303030;
 
-
   /* Fonts  */
   --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue", sans-serif; 
   --font-family-Lexend: "Lexend Deca", sans-serif;
-
 }
 
 header {
   align-items: center;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   display: flex;
-  position: relative;
 }
 
 .box-logo {
@@ -28,7 +25,6 @@ header {
 
 .logo-oficial {
   color: #303030;
-  font-size: 24px;
   font-weight: 300;
   font-family: var(--font-family-title);
   letter-spacing: 0.8px;
@@ -40,17 +36,24 @@ header {
 }
 
 
-@media screen and (max-width: 767px) {
-  
+/* Media Queries */
+
+@media screen and (min-width: 370px) and (min-width: 414px) {
   header{
     justify-content: flex-start;
-    padding: 25px 50px;
+    padding: 25px 12px;
+  }
+
+  .box-logo {
+    width: 100%;
+    padding: 0 0 0 35px;
   }
 
   .logo-oficial{
-    font-size: 28px;
+    font-size: 24px;
   }
 }
+
 
 @media screen and (min-width: 768px) {
   
@@ -59,15 +62,58 @@ header {
     padding: 25px 55px;
   }
 
+  .box-logo {
+    width: 100%;
+    padding: 0 0 0 100px;
+  }
+
   .logo-oficial{
     font-size: 28px;
   }
 }
 
-@media screen and (max-width: 1279px) {
+
+@media screen and (min-width: 1024px) {
   
   header{
     justify-content: flex-start;
-    padding: 35px 70px;
+    padding: 30px 40px;
+  }
+
+  .box-logo {
+    width: 100%;
+    padding: 0 0 0 40px;
+  }
+}
+
+
+@media screen and (min-width: 1279px) {
+  
+  header{
+    justify-content: flex-start;
+    padding: 30px 40px;
+  }
+
+  .box-logo {
+    width: 100%;
+    padding: 0 0 0 100px;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  
+  .box-logo {
+    width: 100%;
+    padding: 0 0 0 130px;
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  
+  .box-logo {
+    width: 100%;
+    padding: 0 0 0 250px;
   }
 }

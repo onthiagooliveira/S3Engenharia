@@ -31,14 +31,6 @@
   padding: 50px 45px;
 }
 
-.call-container {
-  align-items: center;
-  display: grid;
-  grid-auto-flow: column;
-  padding: 36px 24px;
-  width: 100%;
-}
-
 .highlighted-title-container {
   font-family: var(--font-family-title);
 }
@@ -82,22 +74,13 @@
 }
 
 .home-cards-section {
-  align-items: center;
-  display: grid;
   font-family: var(--font-family-Lexend);
-  grid-auto-flow: row;
-  justify-content: center;
-  width: 100%;
 }
 
 .home-cards {
+  letter-spacing: normal;
   background-color: var(--dark-10);
   color: var(--light-30);
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 22px;
-  text-align: justify;
-  padding: 12px 24px;
 }
 
 .text-card-p {
@@ -105,15 +88,10 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-
-  .featured-container{
-    height: 550px;
-  }
+@media screen and (min-width: 414px) {
 
   .home-content {
-    background-position: top;
-    padding: 50px 45px;
+    padding: 50px 25px;
     display: flex;
     align-items: center;
   }
@@ -126,29 +104,35 @@
   }
 
   .title-emphasis {
-    font-size: 48px;
+    font-size: 46px;
   }
 
   .descript-emphasis {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
   }
 
   .budgets-button {
-    width: fit-content;
+    width: 100%;
     padding: 12px 24px;
+    text-align: center;
   }
+
 
   .home-cards-section {
     display: grid;
     grid-auto-flow: row;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .home-cards {
-    font-size: 18px;
-    line-height: 22px;
-    text-align: justify;
+    font-size: 13px;
+    line-height: 18px;
     padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
 }
@@ -159,16 +143,15 @@
   }
 
   .home-content {
-    background-position: top;
-    padding: 50px 45px;
     display: flex;
-    align-items: center;
+    align-items: center ;
   }
 
   .call-container {
     width: 100%;
     display: grid;
     grid-auto-flow: row;
+    justify-items: center;
     padding: 36px 24px;
   }
 
@@ -186,68 +169,47 @@
   }
 
   .home-cards-section {
-    display: grid;
-    grid-auto-flow: row;
-    margin-top: 50px;
-  }
-
-  .home-cards {
-    font-size: 18px;
-    line-height: 22px;
-    text-align: justify;
-    padding: 12px 24px;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  .featured-container{
-    height: 510px;
-  }
-
-  .home-content {
-    background-position: top;
-    padding: 50px 45px;
-    display: flex;
-    align-items: center;
-  }
-
-  .call-container {
-    width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    padding: 36px 24px;
-  }
-
-  .title-emphasis {
-    font-size: 48px;
-  }
-
-  .descript-emphasis {
-    font-size: 24px;
-  }
-
-  .budgets-button {
-    width: fit-content;
-    padding: 12px 24px;
-  }
-
-  .budgets-button {
-    width: fit-content;
-    padding: 12px 24px;
-  }
-
-  .home-cards-section {
-    align-items: center;
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
+    margin-top: 50px;
     width: 100%;
   }
 
   .home-cards {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     text-align: justify;
+    padding: 12px 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .call-container {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 36px 24px;
+    gap: 36px;
+  }
+
+  .home-cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-cards {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
     padding: 12px 24px;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-cards {
+    font-size: 16px;
   }
 }
