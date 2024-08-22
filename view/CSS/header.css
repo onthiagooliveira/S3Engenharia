@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@100..900&display=swap');
 
 :root {
-  /* Colors */
+  /*
+  *
+  * Colors
+  *
+  */
   --light-30: #ffffff;
   --dark-10: #303030;
 
@@ -35,8 +39,22 @@ header {
   font-family: var(--font-family-Lexend);
 }
 
+.social-icons {
+  
+}
 
-/* Media Queries */
+.linkedin-picture,
+.instagram-picture {
+  width: 25px;
+  height: 25px;
+}
+
+
+/*
+*
+* Media Queries
+*
+*/
 
 @media screen and (min-width: 370px) and (min-width: 414px) {
   header{
@@ -116,4 +134,15 @@ header {
     width: 100%;
     padding: 0 0 0 250px;
   }
+
+  .social-icons {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding-right: 270px;
+
+  }
+
+  
 }
