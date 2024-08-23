@@ -70,6 +70,11 @@ header {
   .logo-oficial{
     font-size: 24px;
   }
+
+  .social-icons {
+    display: none;
+  }
+
 }
 
 
@@ -88,6 +93,10 @@ header {
   .logo-oficial{
     font-size: 28px;
   }
+
+  .social-icons {
+    display: none;
+  }
 }
 
 
@@ -101,6 +110,14 @@ header {
   .box-logo {
     width: 100%;
     padding: 0 0 0 40px;
+  }
+
+  .social-icons {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding-right: 40px;
   }
 }
 
@@ -116,6 +133,14 @@ header {
     width: 100%;
     padding: 0 0 0 100px;
   }
+
+  .social-icons {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding-right: 100px;
+  }
 }
 
 
@@ -124,6 +149,14 @@ header {
   .box-logo {
     width: 100%;
     padding: 0 0 0 130px;
+  }
+
+  .social-icons {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding-right: 130px;
   }
 }
 
@@ -141,7 +174,6 @@ header {
     grid-auto-flow: column;
     gap: 15px;
     padding-right: 270px;
-
   }
 
   
