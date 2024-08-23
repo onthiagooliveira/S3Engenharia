@@ -9,7 +9,11 @@
   --light-30: #ffffff;
   --dark-10: #303030;
 
-  /* Fonts  */
+  /*
+  *
+  Fonts
+  *
+  */
   --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue", sans-serif; 
   --font-family-Lexend: "Lexend Deca", sans-serif;
 }
@@ -26,7 +30,6 @@ header {
   align-items: center;
 }
 
-
 .logo-oficial {
   color: #303030;
   font-weight: 300;
@@ -39,14 +42,9 @@ header {
   font-family: var(--font-family-Lexend);
 }
 
-.social-icons {
-  
-}
-
 .icon-picture {
   width: 25px;
 }
-
 
 /*
 *
@@ -172,7 +170,5 @@ header {
     grid-auto-flow: column;
     gap: 15px;
     padding-right: 270px;
-  }
-
-  
+  }  
 }

@@ -1,18 +1,38 @@
+/*
+*
+* Import Fonts
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@100..900&display=swap');
 
 :root {
-  /* Colors */
+  /*
+  *
+  * Colors
+  *
+  */
   --light-30: rgb(259, 259, 259);
 
   --dark-10: #1a1919;
+  --dark-20: #404040;
   --yellow-30: #Fbc105;
 
-  /* Fonts  */
+  /*
+  *
+  * Fonts
+  *
+  */
   --font-family-title: system-ui, -apple-system, "Open Sans", "Helvetica Neue",
     sans-serif;
-
   --font-family-Lexend: "Lexend Deca", sans-serif;
+  --font-size-24: 24px;
 }
+
+/*
+*
+* Main
+*
+*/
 
 .featured-container {
   display: block;
@@ -35,7 +55,7 @@
   font-family: var(--font-family-title);
 }
 
-.title-emphasis {
+.title-emphasis{
   font-family: var(--font-family-Lexend);
   color: var(--light-30);
   font-weight: 600;
@@ -83,10 +103,59 @@
   color: var(--light-30);
 }
 
+.text-card {
+  color: var(--light-30);
+  font-family: var(--font-family-Lexend);
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
 .text-card-p {
   color: var(--yellow-30);
   cursor: pointer;
 }
+
+/*
+*
+* Container Services
+*
+*/
+
+.container-services {
+  display: flex; 
+}
+
+.title-services,
+.title-card-service {
+  color: var(--dark-10);
+  font-family: var(--font-family-Lexend);
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.descript-services,
+.descript-service-card {
+  color: var(--dark-20);
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+
+.grid-steps-cards{
+  display: grid;
+}
+
+.card-service {
+  display: flex;
+}
+
+
+/*
+*
+* Media Queries
+*
+*/
 
 @media screen and (min-width: 414px) {
 
@@ -193,6 +262,10 @@
     gap: 36px;
   }
 
+  .descript-emphasis {
+    font-size: 22px;
+  }
+
   .home-cards-section {
     display: flex;
     flex-direction: column;
@@ -201,15 +274,89 @@
 
   .home-cards {
     font-size: 16px;
-    line-height: 26px;
     text-align: justify;
     padding: 12px 24px;
     width: fit-content;
   }
+
+  .container-services {
+    flex-direction: column;
+    padding: 80px 60px;
+    gap: 20px;
+  }
+
+  .title-services {
+    padding: 12px 0;
+    font-size: 22px;
+  }
+  
+  .descript-services {
+    padding: 4px 0px;
+    font-size: 18px;
+  }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-width: 1920px) {
+  .call-container {
+    padding: 36px 0px;
+    gap: 36px;
+  }
+  
   .home-cards {
     font-size: 16px;
   }
+
+  .container-services {
+    flex-direction: column;
+    padding: 120px 240px;
+  }
+
+  .title-services{
+    font-size: 30px;
+    padding: 0 45px;
+    margin-bottom: 16px;
+  }
+
+  .descript-services {
+    font-size: 18px;
+    padding: 0 45px;
+    line-height: normal;
+  }
+
+  .grid-steps-cards{
+    padding: 50px 45px;
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  .card-service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .icon-service {
+    width: 160px;
+    height: 160px;
+  }
+
+  .icon-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .title-card-service{
+    font-size: var(--font-size-24);
+    text-align: center;
+  }
+
+  .descript-service-card {
+    text-align:center;
+  }
+
 }
