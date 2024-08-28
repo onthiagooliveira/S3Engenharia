@@ -44,6 +44,18 @@ header {
 
 .icon-picture {
   width: 25px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.linkdin-icon:hover, 
+.instagram-icon:hover, 
+.whatsapp-icon:hover {
+  background-color: #Fbc105;
+  border-radius: 20px;
+  width: 100%;
+  transform: hover ease-in 0.15ms;
 }
 
 /*
