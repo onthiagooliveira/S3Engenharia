@@ -352,7 +352,6 @@
 
 @media screen and (min-width: 1024px) {
 
-
   .call-container {
     display: grid;
     grid-auto-flow: column;
@@ -431,17 +430,16 @@
 @media screen and (min-width: 1440px) and (min-width: 1920px) {
   
   .call-container {
-    padding: 36px 0px;
+    padding: 36px 0;
     gap: 36px;
+  }
+
+  .highlighted-title-container {
+    margin-left: -80px;
   }
   
   .home-cards {
     font-size: 16px;
-  }
-
-  .container-services {
-    flex-direction: column;
-    padding: 120px 240px;
   }
 
   .title-services{
@@ -499,7 +497,7 @@
   *
   */
   .container-services {
-    padding: 120px 250px;
+    padding: 120px 240px;
     display: grid;
     grid-auto-flow: row;
    }
@@ -509,8 +507,5 @@
     padding-left: 48px;
     line-height: 32px;
    }
-
-
-   
 
 }
