@@ -461,7 +461,8 @@
     grid-auto-flow: column;
     grid-auto-rows: 1fr;
     gap: 60px;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 120px;
   }
 
   .card-service {
@@ -491,4 +492,25 @@
   .descript-service-card {
     text-align:center;
   }
+
+  /*
+  *
+  *Container services
+  *
+  */
+  .container-services {
+    padding: 120px 250px;
+    display: grid;
+    grid-auto-flow: row;
+   }
+
+   .title-services, 
+   .descript-services {
+    padding-left: 48px;
+    line-height: 32px;
+   }
+
+
+   
+
 }
