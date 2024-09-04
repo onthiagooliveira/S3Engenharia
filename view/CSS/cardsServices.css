@@ -1,0 +1,92 @@
+
+/* 
+*
+* Cards Services
+*
+*/
+
+.title-services-call {
+  padding: 32px 0;
+
+}
+
+.grid-cards-services {
+  padding: 50px 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+  gap: 60px;
+}
+
+h3 {
+  color: var(--dark-10);
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.small-p {
+  font-size: 17px;
+  font-family: var(--font-family-Lexend);
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: var(--yellow-30);
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  font-family: Arial, sans-serif;
+}
+
+.cards-service-1 {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  background-color: var(--light-yellow);
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cards-service-1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: var(--yellow-30);
+  height: 32px;
+  width: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.cards-service-1:hover:before {
+  transform: scale(21);
+}
+
+.cards-service-1:hover .small-p {
+  transition: all 0.3s ease-out;
+}
+
+.cards-service-1:hover h3 {
+  transition: all 0.3s ease-out;
+}

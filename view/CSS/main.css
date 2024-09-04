@@ -3,7 +3,7 @@
 * Import Fonts
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@100..900&display=swap");
 
 :root {
   /*
@@ -15,7 +15,9 @@
 
   --dark-10: #1a1919;
   --dark-20: #404040;
-  --yellow-30: #Fbc105;
+  --dark-30: #262626;
+  --yellow-30: #fbc105;
+  --light-yellow: #f9f8f2;
 
   /*
   *
@@ -55,7 +57,7 @@
   font-family: var(--font-family-title);
 }
 
-.title-emphasis{
+.title-emphasis {
   font-family: var(--font-family-Lexend);
   color: var(--light-30);
   font-weight: 600;
@@ -101,13 +103,17 @@
   letter-spacing: normal;
   background-color: var(--dark-10);
   color: var(--light-30);
+  cursor: pointer;
+  padding: 28px 22px;
 }
 
 .text-card {
   color: var(--light-30);
   font-family: var(--font-family-Lexend);
-  font-weight: 600;
-  letter-spacing: normal;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  line-height: 22px;
 }
 
 .text-card-p {
@@ -122,7 +128,7 @@
 */
 
 .container-services {
-  display: flex; 
+  display: flex;
 }
 
 .title-services,
@@ -136,376 +142,12 @@
 .descript-services,
 .descript-service-card {
   color: var(--dark-20);
-  font-family: var(--font-family-title);
-  font-weight: 400;
+  font-family: var(--font-family-Lexend);
+  font-weight: 300;
   letter-spacing: normal;
-  line-height: 30px;
+  line-height: 28px;
 }
 
-.grid-steps-cards{
+.grid-steps-cards {
   display: grid;
-}
-
-.card-service {
-  display: flex;
-}
-
-
-/*
-*
-* Media Queries
-*
-*/
-
-@media screen and (min-width: 414px) {
-
-  .home-content {
-    padding: 50px 25px;
-    display: flex;
-    align-items: center;
-  }
-
-  .call-container {
-    width: 100%;
-    display: grid;
-    grid-auto-flow: row;
-    padding: 36px 24px;
-  }
-
-  .title-emphasis {
-    font-size: 46px;
-  }
-
-  .descript-emphasis {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-
-  .budgets-button {
-    width: 100%;
-    padding: 12px 24px;
-    text-align: center;
-  }
-
-  .home-cards-section {
-    display: grid;
-    grid-auto-flow: row;
-    margin-top: 40px;
-  }
-
-  .home-cards {
-    font-size: 17px;
-    line-height: 18px;
-    padding: 12px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .container-services {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 45px;
-    gap: 45px;
-    align-items: center;
-  }
-
-  .title-services {
-    font-size: 22px;
-    margin-bottom: 16px;
-    text-align: start;
-  }
-
-  .descript-services {
-    font-size: 17px;
-    text-align: start;
-    letter-spacing: normal;
-  }
-
-  .grid-steps-cards {
-    align-items: center;
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-columns: 1fr;
-    margin-top: 36px;
-    gap: 60px;
-  }
-
-  .card-service {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-rows: 1fr;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .icon-service {
-    width: 100px;
-    height: 100px;
-  }
-
-  .icon-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
-
-  .title-card-service {
-    font-size: 22px;
-    margin-bottom: 7px;
-    text-align: start;
-  }
-
-  .descript-service-card {
-    font-size: 17px;
-    text-align: start;
-    letter-spacing: normal;
-  }
-
-}
-
-@media screen and (min-width: 768px) {
-  .featured-container{
-    height: 550px;
-  }
-
-  .home-content {
-    display: flex;
-    align-items: center ;
-  }
-
-  .call-container {
-    width: 100%;
-    display: grid;
-    grid-auto-flow: row;
-    justify-items: center;
-    padding: 36px 24px;
-  }
-
-  .title-emphasis {
-    font-size: 48px;
-  }
-
-  .descript-emphasis {
-    font-size: 24px;
-  }
-
-  .budgets-button {
-    width: fit-content;
-    padding: 12px 24px;
-  }
-
-  .home-cards-section {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: center;
-    margin-top: 50px;
-    width: 100%;
-  }
-
-  .home-cards {
-    font-size: 16px;
-    line-height: 22px;
-    text-align: justify;
-    padding: 12px 60px;
-  }
-
-  /*
-  *
-  *Container services
-  *
-  */
-  .container-services {
-    padding: 60px 150px;
-    margin-bottom: 50px;
-  }
-
-  .grid-steps-cards {
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-rows: 1fr;
-    align-items: center;
-    gap: 50px;
-  }
-
-  .card-service {
-    align-items: center;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 10px;
-  }
-
-  .icon-service {
-    width: 140px;
-    height: 140px;
-    padding: 6px 12px;
-  }
-
-  .icon-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  .call-container {
-    display: grid;
-    grid-auto-flow: column;
-    padding: 36px 24px;
-    gap: 36px;
-  }
-
-  .descript-emphasis {
-    font-size: 22px;
-  }
-
-  .home-cards-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home-cards {
-    font-size: 16px;
-    text-align: justify;
-    padding: 12px 24px;
-    width: fit-content;
-  }
-
-  .container-services {
-    flex-direction: column;
-    padding: 80px 60px;
-    gap: 20px;
-  }
-
-  .title-services {
-    padding: 12px 0;
-    font-size: 22px;
-  }
-  
-  .descript-services {
-    padding: 4px 0px;
-    font-size: 18px;
-  }
-
-  /*
-  *
-  *Container services
-  *
-  */
-  .container-services {
-   padding-left: 70px;
-   padding-right: 68px;
-  }
-
-  .grid-steps-cards {
-    width: 100%;
-    display: grid;
-    grid-auto-flow: row;
-    gap: 50px;
-  }
-
-  .card-service {
-    display: flex;flex-direction: row;
-    padding: 6px 12px;
-  }
-
-  .icon-service {
-    width: 180px;
-    height: 180px;
-    padding: 6px 12px;
-  }
-
-  .icon-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-@media screen and (min-width: 1440px) and (min-width: 1920px) {
-  
-  .call-container {
-    padding: 36px 0;
-    gap: 36px;
-  }
-
-  .highlighted-title-container {
-    margin-left: -80px;
-  }
-  
-  .home-cards {
-    font-size: 16px;
-  }
-
-  .title-services{
-    font-size: 30px;
-    padding: 0 45px;
-    margin-bottom: 16px;
-  }
-
-  .descript-services {
-    font-size: 18px;
-    padding: 0 45px;
-    line-height: normal;
-  }
-
-  .grid-steps-cards{
-    padding: 50px 45px;
-    grid-auto-flow: column;
-    grid-auto-rows: 1fr;
-    gap: 60px;
-    margin-top: 50px;
-    margin-bottom: 120px;
-  }
-
-  .card-service {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .icon-service {
-    width: 160px;
-    height: 160px;
-  }
-
-  .icon-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .title-card-service{
-    font-size: var(--font-size-24);
-    text-align: center;
-  }
-
-  .descript-service-card {
-    text-align:center;
-  }
-
-  /*
-  *
-  *Container services
-  *
-  */
-  .container-services {
-    padding: 120px 240px;
-    display: grid;
-    grid-auto-flow: row;
-   }
-
-   .title-services, 
-   .descript-services {
-    padding-left: 48px;
-    line-height: 32px;
-   }
-
 }

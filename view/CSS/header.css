@@ -55,7 +55,7 @@ header {
   background-color: #Fbc105;
   border-radius: 20px;
   width: 100%;
-  transform: hover ease-in 0.15ms;
+  transform: all ease-out 0.3s;
 }
 
 /*
