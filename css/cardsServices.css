@@ -6,9 +6,7 @@
 */
 
 .grid-cards-services {
-  align-items: center;
   display: grid;
-  gap: 55px;
 }
 
 h3 {
@@ -49,7 +47,6 @@ h3 {
 .cards-service-1 {
   display: block;
   position: relative;
-  max-width: 300px;
   background-color: var(--light-yellow);
   border-radius: 4px;
   padding: 32px 24px;
@@ -84,15 +81,72 @@ h3 {
   transition: all 0.3s ease-out;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 320px) {
   .grid-cards-services {
-    display: grid;
     grid-auto-flow: row;
     margin-top: 30px;
     padding: 12px 8px;
   }
 
+  .cards-service-1 {
+    width: 240px;
+  }
+
   .cards-service-1 .title-services {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 368px) {
+  .cards-service-1 {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-services-call {
+    width: 100%;
+    padding: 50px 5px;
+  }
+
+  .title-services-call .title-services {
+    padding: 5px;
+    margin-top: 30px;
+  }
+
+  .grid-cards-services {
+    margin-top: 45px;
+  }
+
+  .cards-service-1 {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1024px)and (max-width: 1278px) {
+
+  .title-services-call .title-services {
+    padding: 0px 0;
+    margin-top: 30px;
+  }
+
+  .grid-cards-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+    margin-top: 55px;
+  }
+
+  .cards-service-1 {
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+  .grid-cards-services {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    width: 100%;
   }
 }
