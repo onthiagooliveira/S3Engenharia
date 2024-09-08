@@ -5,7 +5,7 @@
 *
 */
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 370px) {
   .home-content {
     padding: 50px 25px;
     display: flex;
@@ -282,7 +282,7 @@
   }
 
   .highlighted-title-container {
-    margin-left: 0px;
+    margin-left: -80px;
   }
 
   .home-cards {

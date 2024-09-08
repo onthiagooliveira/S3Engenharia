@@ -38,7 +38,6 @@
 
 .featured-container {
   display: block;
-  height: 550px;
 }
 
 .home-content {
@@ -151,3 +150,4 @@
 .grid-steps-cards {
   display: grid;
 }
+
