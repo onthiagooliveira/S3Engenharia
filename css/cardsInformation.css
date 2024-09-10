@@ -1,0 +1,109 @@
+#favDialog {
+  position: relative;
+  border: none;
+  padding: 28px;
+  background-color: var(--dark-10);
+  z-index: 1;
+}
+
+#favDialog::backdrop{
+  background-color: rgba(26, 25, 25, .6);
+}
+
+.title-services-span {
+  color: var(--light-30);
+  font-family: var(--font-family-Lexend);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+
+}
+
+
+
+.home-cards-section {
+  display: flex;
+  position: relative;
+  font-family: var(--font-family-Lexend);
+}
+
+.home-cards {
+  background-color: var(--dark-10);
+  color: var(--light-30);
+  cursor: pointer;
+}
+
+.home-cards-span {
+  background-color: var(--dark-10);
+  color: var(--light-30);
+}
+
+.text-card {
+  color: var(--light-30);
+  font-family: var(--font-family-Lexend);
+  font-size: 17px;
+  font-weight: 200;
+  letter-spacing: 0.6px;
+  line-height: 22px;
+}
+
+.text-card-span {
+  color: var(--light-30);
+  font-family: var(--font-family-Lexend);
+  font-size: 17px;
+  font-weight: 200;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+.text-card-p {
+  color: var(--yellow-30);
+  cursor: pointer;
+}
+
+ul li:before {
+  content: '\2022';
+  margin: 0 12px;
+  color: var(--yellow-30);
+}
+
+/* 
+* Media queries
+*/
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+  .home-cards-section {
+    flex-direction: column;
+    padding: 55px 0px;
+    gap: 16px;
+  }
+
+  .home-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 10px;
+    line-height: 18px;
+    padding: 24px 12px;
+    width: 100%;
+
+  }
+
+  
+
+  .text-card-span {
+    text-align: start;
+  }
+
+  .small-font {
+    font-size: 17px;
+  }
+}
+
+
+  
+
+

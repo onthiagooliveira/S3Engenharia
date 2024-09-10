@@ -12,11 +12,12 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/cardsInformation.css">
   <link rel="stylesheet" href="/css/cardsServices.css">
   <link rel="stylesheet" href="/css/mediaQueries.css">
 
   <!-- JS -->
-   <script src="/jquery/jquery-3.7.1.min.js"></script>
+  <script src="/jquery/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -70,11 +71,38 @@
           </div>
 
           <!-- ART information-->
-          <div class="home-cards-section" href="#" id="banner-information">
-            <div class="home-cards" id="art-explanation">
-              <p class="text-card">O que é, e para que serve um laudo ART?</p>
-              <a class="text-card-p" href="#">Saiba mais</a>
+          <div class="home-cards-section" href="#" id="modal-art">
+            <div class="home-cards" id="home-cards-info-art">
+              <p class="text-card">O que é um laudo ART?</p>
+              <a class="text-card-p" href="#" >Saiba mais</a>
             </div>
+
+            <!-- Opening dialog box when field is activated -->
+             <dialog id="favDialog">
+              <span id="art-explanation">
+                <div class="home-cards-span">
+                  <p class="text-card-span small-font">
+                    O laudo ART <span class="yellow-font-span">( Anotação de Responsabilidade Técnica)</span> é um 
+                    documento emitido por um engenheiro habilitado, que formaliza a responsabilidade técnica sobre um 
+                    projeto, obra ou serviço específico.
+                  </p>
+                  <p class="text-card-span">
+                    Esse documento é obrigatório para atividades que envolvem engenharia, arquitetura,
+                    e agronomia no Brasil, sendo regulamentado pelo Conselho Regional de Engenharia e Agronomia (CREA).
+                  </p><br>
+
+                  <p class="text-card-span">
+                    <span class="yellow-font-span">Utilização do Laudo ART: </span>
+                    <ul class="art-list">
+                      <li class="text-card-span"><span class="title-services-span">Obras civis</span> (construção, reformas, demolição)</li>
+                      <li class="text-card-span"><span class="title-services-span">Projetos de engenharia e arquitetura</span> (estruturais, elétricos, hidráulicos)</li>
+                      <li class="text-card-span"><span class="title-services-span">Laudos técnicos</span> (avaliações de edificações, patologias estruturais)</li>
+                      <li class="text-card-span"><span class="title-services-span">Manutenções e serviços especializados</span> (Instalação de equipamentos, gestão de obras)</li>
+                    </ul>
+                  </p>
+                </div>
+              </span>
+             </dialog>
           </div>
         </div>
       </div>
@@ -128,7 +156,8 @@
 
         <div class="title-services-call">
           <h2 class="title-services">Soluções Estruturais e Reformas em Geral</h2>
-          <p class="descript-services">Conheça nossas soluções, através de nosso planejamento e equipe qualificada, garantimos o melhor para sua obra.</p>
+          <p class="descript-services">Conheça nossas soluções, através de nosso planejamento e equipe qualificada,
+            garantimos o melhor para sua obra.</p>
         </div>
 
         <!-- Cards with services offered -->
@@ -136,7 +165,8 @@
 
           <div class="cards-service-1" href="#">
             <h3 class="title-services">Reformas em Geral</h3>
-            <p class="small-p">Dê nova vida ao seu ambiente com nossos serviços de reformas, garantia de qualidade na mão de obra do ínicio ao fim.</p>
+            <p class="small-p">Dê nova vida ao seu ambiente com nossos serviços de reformas, garantia de qualidade na
+              mão de obra do ínicio ao fim.</p>
             <div class="go-corner" href="#">
               <div class="go-arrow">
                 →
@@ -171,7 +201,8 @@
 
           <div class="cards-service-1" href="#">
             <h3 class="title-services">Mezaninos</h3>
-            <p class="small-p">Maximize o espaço da sua construção com mezaninos sob medida. Ideais para ampliar áreas de forma prática.</p>
+            <p class="small-p">Maximize o espaço da sua construção com mezaninos sob medida. Ideais para ampliar áreas
+              de forma prática.</p>
             <div class="go-corner" href="#">
               <div class="go-arrow">
                 →

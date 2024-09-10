@@ -37,6 +37,7 @@
 */
 
 .featured-container {
+  position: relative;
   display: block;
 }
 
@@ -79,6 +80,11 @@
   font-weight: 400;
 }
 
+.yellow-font-span {
+  color: var(--yellow-30);
+  font-weight: 300;
+}
+
 .budgets-button {
   background-color: var(--yellow-30);
   color: var(--dark-10);
@@ -92,32 +98,6 @@
   font-family: var(--font-family-Lexend);
   font-weight: 400;
   color: var(--dark-10);
-}
-
-.home-cards-section {
-  font-family: var(--font-family-Lexend);
-}
-
-.home-cards {
-  letter-spacing: normal;
-  background-color: var(--dark-10);
-  color: var(--light-30);
-  cursor: pointer;
-  padding: 28px 22px;
-}
-
-.text-card {
-  color: var(--light-30);
-  font-family: var(--font-family-Lexend);
-  font-size: 17px;
-  font-weight: 300;
-  letter-spacing: 0.6px;
-  line-height: 22px;
-}
-
-.text-card-p {
-  color: var(--yellow-30);
-  cursor: pointer;
 }
 
 /*
