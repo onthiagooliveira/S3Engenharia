@@ -7,6 +7,9 @@ let favDialog = $("#favDialog");
 $(document).ready(function () {
   // When the informations button it's clicked 
   showModal.click(function () {
-    favDialog.slideToggle(1000) // Show the field with informations 
+  alert(favDialog.slideToggle(1000) // Show the field with informations)
+    
+
+   
   })
 })
