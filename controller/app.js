@@ -7,7 +7,7 @@ let favDialog = $("#favDialog");
 $(document).ready(function () {
   // When the informations button it's clicked 
   showModal.click(function () {
-  alert("beleza")
+  return alert(favDialog.innerHtml)
     
 
    
