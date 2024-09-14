@@ -54,7 +54,6 @@ function viewDialog() {
   // Display the popup
   const dialogPopUp = $("#dialogPopUp");
   const overlay = $("#overlay");
-  const closedSpan = $("#closeDialog");
 
   dialogPopUp.fadeIn();
   overlay.fadeIn();
