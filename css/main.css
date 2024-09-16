@@ -30,6 +30,12 @@
   --font-size-24: 24px;
 }
 
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 /*
 *
 * Main
@@ -131,3 +137,5 @@
 .grid-steps-cards {
   display: grid;
 }
+
+

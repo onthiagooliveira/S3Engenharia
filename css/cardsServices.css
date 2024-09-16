@@ -70,7 +70,7 @@ h3 {
 }
 
 .cards-service-1:hover:before {
-  transform: scale(21);
+  transform: scale(31);
 }
 
 .cards-service-1:hover .small-p {
@@ -97,49 +97,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 368px) {
-  .cards-service-1 {
-    width: 300px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .title-services-call {
-    width: 100%;
-    padding: 50px 5px;
-  }
-
-  .title-services-call .title-services {
-    margin-top: 30px;
-  }
-
-  .grid-cards-services {
-    margin-top: 45px;
-  }
-
-  .cards-service-1 {
-    width: 330px;
-  }
-}
-
-@media screen and (min-width: 1024px)and (max-width: 1278px) {
-
-  .title-services-call .title-services {
-    margin-top: 40px;
-  }
-
-  .grid-cards-services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 55px;
-    margin-top: 55px;
-    padding: 35px 15px ;
-  }
-
-  .cards-service-1 {
-    max-width: 330px;
-  }
-}
 
 @media screen and (min-width: 1279px) {
   .grid-cards-services {
