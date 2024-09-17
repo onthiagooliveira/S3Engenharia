@@ -119,7 +119,7 @@ ul li:before {
   }
 
   #dialogPopUp {
-    min-width: 320px;
+    min-width: 340px;
     padding: 20px 15px;
     width: fit-content;
   }
