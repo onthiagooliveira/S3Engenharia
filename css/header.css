@@ -58,29 +58,3 @@ header {
   width: 100%;
   transform: all ease-out 0.3s;
 }
-
-/*
-*
-* Media Queries
-*
-*/
-
-/* 
-
-
-
-@media screen and (min-width: 1920px) {
-  
-  .box-logo {
-    width: 100%;
-    padding: 0 0 0 250px;
-  }
-
-  .social-icons {
-    align-items: center;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 15px;
-    padding-right: 270px;
-  }  
-} */
