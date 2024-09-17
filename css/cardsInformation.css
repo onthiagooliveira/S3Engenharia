@@ -119,10 +119,27 @@ ul li:before {
   }
 
   #dialogPopUp {
-    margin: 0 auto;
     min-width: 270px;
-    padding: 20px;
+    padding: 20px 15px;
     width: fit-content;
-    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #dialogPopUp {
+    padding: 38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #dialogPopUp {
+    padding: 48px;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+
+  #dialogPopUp {
+    padding: 40px;
   }
 }
