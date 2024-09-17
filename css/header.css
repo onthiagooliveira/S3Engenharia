@@ -44,17 +44,16 @@ header {
 }
 
 .icon-picture {
-  width: 25px;
+  width: 35px;
   padding: 6px;
   display: flex;
   align-items: center;
 }
 
-.linkdin-icon:hover, 
+.linkedin-icon:hover, 
 .instagram-icon:hover, 
 .whatsapp-icon:hover {
   background-color: #Fbc105;
-  border-radius: 20px;
-  width: 100%;
+  border-radius: 30px;
   transform: all ease-out 0.3s;
 }
