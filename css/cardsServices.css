@@ -5,10 +5,6 @@
 *
 */
 
-.grid-cards-services {
-  display: grid;
-}
-
 h3 {
   color: var(--dark-10);
   font-size: 17px;
@@ -45,7 +41,6 @@ h3 {
 }
 
 .cards-service-1 {
-  display: block;
   position: relative;
   background-color: var(--light-yellow);
   border-radius: 4px;
@@ -79,35 +74,4 @@ h3 {
 
 .cards-service-1:hover h3 {
   transition: all 0.3s ease-out;
-}
-
-@media screen and (min-width: 320px) {
-  .grid-cards-services {
-    grid-auto-flow: row;
-    margin-top: 30px;
-    padding: 12px 8px;
-  }
-
-  .cards-service-1 {
-    width: 240px;
-  }
-
-  .cards-service-1 .title-services {
-    text-align: center;
-  }
-}
-
-
-
-@media screen and (min-width: 1279px) {
-  .grid-cards-services {
-    display: flex;
-    gap: 36px;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .title-services-call .title-services {
-    margin-top: 60px;
-  }
 }

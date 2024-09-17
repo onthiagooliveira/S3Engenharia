@@ -1,0 +1,165 @@
+
+/* 
+*
+* CardsMedia Queries 1440px
+*
+*/
+
+@media screen and (min-width: 1440px) and (min-width: 1920px) {
+  /* 
+  * Header
+  */
+
+  header{
+    padding: 13px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box-logo {
+    padding: 0 0 0 350px;
+  }
+
+  .social-icons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 14px;
+    padding: 12px 350px 12px 350px;
+  }
+
+  .linkdin-icon, 
+  .instagram-icon, 
+  .whatsapp-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .icon-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  /*
+  * Media queries Main
+  */
+
+  .home-content {
+    height: 550px;
+  }
+
+  .title-emphasis {
+    font-size: 60px;
+  }
+
+  .descript-emphasis {
+    font-size: 22px;
+    letter-spacing: normal;
+  }
+
+  .call-container {
+    width: 100%;
+    gap: 15px;
+    padding: 0 350px;
+    margin: 4px;
+  }
+
+  .title-services {
+    font-size: 24px;
+    padding: 12px 0 0 12px;
+  }
+
+  .descript-services {
+    font-size: 18px;
+    padding: 0 0 0 12px;
+  }
+
+  /*
+  * MediaQueries Container Services
+  */
+  .container-services  {
+    margin: 8px;
+    margin-top: 100px;
+    padding: 0 342px;
+    gap: 40px;
+  }
+
+  .title-services {
+    font-size: 24px;
+    padding: 0 0 0 12px;
+  }
+
+  .descript-services {
+    font-size: 18px;
+    padding: 0 0 0 12px;
+  }
+
+  .grid-steps-cards {
+    gap: 40px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .card-service {
+    gap: 22px;
+  }
+
+  .icon-service  {
+    width: 140px;
+    height: 140px;
+  }
+
+  .icon-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .icon-picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  /*
+  * MediaQueries Cards Services
+  */
+
+  .title-services-call {
+    margin-top: 120px;
+  }
+
+  .title-card-service {
+   font-size: 24px;
+  }
+
+  .descript-services {
+    margin-top: -8px;
+    font-size: 18px;
+  }
+
+  /* 
+  * Cards services
+  */
+
+  .grid-cards-services {
+    margin: 4px;
+    padding: 0 4px;
+    margin-top: -35px;
+  }
+
+  /*
+  * Footer
+  */
+
+  footer {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
