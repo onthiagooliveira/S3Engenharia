@@ -1,15 +1,21 @@
-// Selected the tag span (empty)
-const dialogSpan = $("#infoArt-pop-up");
-
 // Loading the DOM
 $(document).ready(function () {
-  let questArt = $('#popUp-Art');
+  let questArt = $("#popUp-Art");
 
   // When the button clicked, show modal
-  questArt.click(function(e) {
-    viewDialog(); 
-  })
+  questArt.click(function (e) {
+    viewDialog();
+  });
+
+
+  // When the menu button is clicked, open options
+  const menuHeader = $(".nav-menu");
+  menuHeader.click(function (e) {
+    viewMenu();
+  });
 });
+
+
 
 function createDialog() {
   return `
@@ -44,11 +50,15 @@ function createDialog() {
   </dialog>`;
 }
 
+
 function createOverlay() {
-  return `<div id="overlay"></div>`
+  return `<div id="overlay"></div>`;
 }
 
 function viewDialog() {
+  // Selected the tag span (empty)
+  const dialogSpan = $("#infoArt-pop-up");
+  
   dialogSpan.append(createOverlay()).append(createDialog());
 
   // Display the popup
@@ -60,11 +70,66 @@ function viewDialog() {
 
   // closes the pop up when clicking on the overlay
   overlay.click(function () {
-    dialogPopUp.fadeOut(function() {
+    dialogPopUp.fadeOut(function () {
       dialogPopUp.remove();
     });
-    overlay.fadeOut(function() {
+    overlay.fadeOut(function () {
       overlay.remove();
-    })
-  })
+    });
+  });
 }
+
+// Create menu in header
+function createMenu() {
+  return `
+  <nav id="menu-list">
+    <ul class="menu-row">
+      <li class="item-menu-burguer">
+        <a href="https://tinyurl.com/2m6uh3dt" target="_blank">
+          <img class="icon-picture-menu"
+           src="https://tinyurl.com/ynnz2en4" alt="linkedin" />
+        </a>
+      </li>
+
+      <li class="item-menu-burguer">
+        <a href="https://tinyurl.com/k3jjaeey" target="_blank">
+          <img class="icon-picture-menu"
+           src="https://tinyurl.com/4sbvb8wn" alt="instagram" />
+        </a>
+      </li>
+ 
+      <li class="item-menu-burguer">
+        <a href="https://tinyurl.com/3xwb8phu" target="_blank">
+          <img class="icon-picture-menu"
+           src="https://img.icons8.com/ios-filled/50/whatsapp--v1.png" alt="whatsapp--v1"/>
+        </a>
+      </li>
+    </ul>
+  </nav> `;
+}
+
+function viewMenu() {
+  const menuContainer = $("#menu-container");
+  const menuItems = $("#menu-list")
+  const overlay = $("#overlay");
+
+  // If the menu already exists, remove it (close it)
+  if (menuItems.length > 0) {
+    menuItems.hide("fold", {horizFirst: false}, 1000, function () {
+      $(this).remove();
+      $("#overlay").remove();
+      console.log(menuItems.length)
+    });
+  } else {
+
+    // Add the menu if it is not present
+    menuContainer.append(createMenu(),createOverlay());
+    menuItems.show("fold", 1000)
+    
+  }
+}
+
+
+
+
+

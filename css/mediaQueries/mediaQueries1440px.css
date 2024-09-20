@@ -22,23 +22,25 @@
   }
 
   .social-icons {
+    height: 100%;
     display: grid;
     grid-auto-flow: column;
     gap: 14px;
-    padding: 12px 350px 12px 350px;
+    padding: 0 350px 0 0;
   }
 
   .linkedin-icon, 
   .instagram-icon, 
   .whatsapp-icon {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height:38px;
+    margin: 0 auto;
   }
 
   .icon-picture {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   
@@ -65,6 +67,7 @@
     padding: 0 350px;
     margin: 4px;
   }
+
 
   .title-services {
     font-size: 24px;

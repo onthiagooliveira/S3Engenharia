@@ -20,6 +20,10 @@
     font-size: 24px;
   }
 
+  .nav-menu {
+    visibility: visible;
+  } 
+
   .social-icons {
     display: none;
   }

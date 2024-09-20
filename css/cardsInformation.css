@@ -82,7 +82,7 @@
   cursor: pointer;
 }
 
-ul li:before {
+.art-list li:before {
   content: "\🏳";
   margin: 0 12px;
   color: var(--yellow-30);

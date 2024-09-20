@@ -24,6 +24,10 @@
     font-size: 28px;
   }
 
+  .nav-menu {
+    visibility: visible;
+  } 
+
   .social-icons {
     display: none
   }
