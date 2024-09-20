@@ -58,20 +58,18 @@ header {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  color: #Fbc105;
 }
 
 #menu-list {
   background-color: var(--light-30);
   border-radius: 0  0 8px 8px;
   height: 20vh;
-
+  position: absolute;
   right: 0;
-  top: 56px;
+  top: 55px;
   padding: 40px;
-  position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .menu-row {

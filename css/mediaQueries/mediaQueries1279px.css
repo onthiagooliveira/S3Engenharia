@@ -29,14 +29,15 @@
     display: grid;
     grid-auto-flow: column;
     gap: 14px;
-    padding: 12px 105px 12px 105px;
+    padding: 0 105px 0 0;
   }
 
-  .linkdin-icon, 
+  .linkedin-icon, 
   .instagram-icon, 
   .whatsapp-icon {
     width: 35px;
     height: 35px;
+    margin: 0 auto;
   }
 
   .icon-picture {
