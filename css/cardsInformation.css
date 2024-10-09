@@ -132,7 +132,8 @@
 
   #dialogPopUp {
     min-width: 320px;
-    padding: 58px 40px 10px 40px;
+    margin: 0 auto;
+    padding: 58px 40px;
     width: fit-content;
   }
 
