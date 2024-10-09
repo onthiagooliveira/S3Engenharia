@@ -88,6 +88,18 @@
   color: var(--yellow-30);
 }
 
+.close-popUp {
+  filter: invert(78%) sepia(94%) saturate(673%) hue-rotate(336deg) brightness(103%) contrast(103%);
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  padding: 5px;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
 /* 
 * Media queries
 */
@@ -124,15 +136,7 @@
     width: fit-content;
   }
 
-  .close-popUp {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-    filter: invert(78%) sepia(94%) saturate(673%) hue-rotate(336deg) brightness(103%) contrast(103%);
-    object-fit: contain;
-  }
+  
 }
 
 @media screen and (min-width: 769px) {
