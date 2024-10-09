@@ -120,8 +120,18 @@
 
   #dialogPopUp {
     min-width: 300px;
-    padding: 38px 50px;
+    padding: 58px 40px;
     width: fit-content;
+  }
+
+  .close-popUp {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    filter: invert(78%) sepia(94%) saturate(673%) hue-rotate(336deg) brightness(103%) contrast(103%);
+    object-fit: contain;
   }
 }
 

@@ -20,6 +20,7 @@ $(document).ready(function () {
 function createDialog() {
   return `
   <dialog id="dialogPopUp">
+    <img class="close-popUp" id="close-popUp" src="https://img.icons8.com/ios/30/delete-sign--v1.png" alt="delete-sign--v1"/>
     <p class="text-card-span small-font">
         O laudo ART <span class="yellow-font-span">( Anotação de Responsabilidade Técnica)</span> é um 
         documento emitido por um engenheiro habilitado, que formaliza a responsabilidade técnica sobre um 
@@ -65,6 +66,8 @@ function viewDialog() {
   const dialogPopUp = $("#dialogPopUp");
   const overlay = $("#overlay");
 
+  const closePopUp = $("#close-popUp");
+
   dialogPopUp.fadeIn();
   overlay.fadeIn();
 
@@ -77,6 +80,15 @@ function viewDialog() {
       overlay.remove();
     });
   });
+
+  closePopUp.click(function() {
+    dialogPopUp.fadeOut(function () {
+      dialogPopUp.remove();
+    });
+    overlay.fadeOut(function () {
+      overlay.remove();
+    });
+  })
 }
 
 // Create menu in header

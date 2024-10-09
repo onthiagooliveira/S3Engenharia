@@ -41,13 +41,14 @@ footer {
   line-height: 24px;
   margin-bottom: 4px;
   text-align: start;
+  letter-spacing: normal;
 }
 
 .small-f {
   color: rgb(259, 259, 259);
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 24px;
   margin-bottom: 4px;
   text-align: start;
